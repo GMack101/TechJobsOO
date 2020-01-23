@@ -15,8 +15,9 @@ namespace TechJobs.ViewModels
 
         // The column to search, defaults to all
         public JobFieldType Column { get; set; } = JobFieldType.All;
-
+        // add validation for empty string keyword
         // The search value
+        [Required]
         [Display(Name = "Keyword:")]
         public string Value { get; set; } = "";
 

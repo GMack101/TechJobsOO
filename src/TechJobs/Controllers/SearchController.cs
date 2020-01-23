@@ -26,7 +26,7 @@ namespace TechJobs.Controllers
 
         // Process search submission and display search results
         public IActionResult Results(SearchJobsViewModel jobsViewModel)
-        {
+        {// add validation for empty string
 
             if (jobsViewModel.Column.Equals(JobFieldType.All) || jobsViewModel.Value.Equals(""))
             {
